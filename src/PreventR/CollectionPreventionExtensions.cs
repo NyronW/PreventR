@@ -37,7 +37,6 @@ public static class CollectionPreventionExtensions
         return prevent;
     }
 
-
     private static int GetEnumeratedCount(IEnumerable enumerable, bool emptyCheck = false)
     {
         int count = 0;

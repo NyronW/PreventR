@@ -12,7 +12,7 @@ public static class NumericPreventionExtensions
 
     public static Prevent<TValue> LessThan<TValue>(this Prevent<TValue> prevent, TValue min, string exceptionMessage = null!) where TValue : INumber<TValue>
     {
-        if (prevent < min) prevent.ThrowException(new ArgumentOutOfRangeException(exceptionMessage ?? $"Value must not be greater than {min}", innerException: null!));
+        if (prevent < min) prevent.ThrowException(new ArgumentOutOfRangeException(exceptionMessage ?? $"Value must not be less than {min}", innerException: null!));
         return prevent;
     }
 
@@ -30,7 +30,7 @@ public static class NumericPreventionExtensions
 
     public static Prevent<TValue> Zero<TValue>(this Prevent<TValue> prevent, string exceptionMessage = null!) where TValue : INumber<TValue>
     {
-        if (prevent == TValue.Zero) prevent.ThrowException(new ArgumentOutOfRangeException(nameof(prevent), exceptionMessage ?? "Value is negative"));
+        if (prevent == TValue.Zero) prevent.ThrowException(new ArgumentOutOfRangeException(nameof(prevent), exceptionMessage ?? "Value cannot be zero"));
         return prevent;
     }
 }

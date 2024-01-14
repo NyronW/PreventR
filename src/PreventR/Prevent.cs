@@ -39,17 +39,11 @@ public static class Prevention
 public readonly record struct Prevent<TValue>
 {
 
-    internal Prevent(TValue value) : this(value, null!, null!, null!)
-    {
-    }
+    internal Prevent(TValue value) : this(value, null!, null!, null!) { }
 
-    internal Prevent(TValue value, string name) : this(value, name, null!, null!)
-    {
-    }
+    internal Prevent(TValue value, string name) : this(value, name, null!, null!) { }
 
-    internal Prevent(TValue value, string name, string message) : this(value, name, message, null!)
-    {
-    }
+    internal Prevent(TValue value, string name, string message) : this(value, name, message, null!) { }
 
     internal Prevent(TValue value, string name, string message, Func<Exception> exceptionFactory)
     {

@@ -45,7 +45,7 @@ public static class StringPreventionExtensions
         var m = Regex.Match(prevent.Value, regexPattern);
         if (!m.Success || prevent.Value != m.Value)
         {
-            prevent.ThrowException($"Input {prevent.Name} was not in required format");
+            prevent.ThrowException($"Input {prevent.Name} was not in required format: {regexPattern}");
         }
 
         return prevent;

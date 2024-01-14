@@ -11,7 +11,7 @@ public static class PredicatePreventionExtensions
 
         return prevent;
     }
-
+      
     public static async Task<Prevent<T>> Predicate<T>(this Prevent<T> prevent, Func<T, Task<bool>> func)
     {
         if (await func(prevent.Value))
