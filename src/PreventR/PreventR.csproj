@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Nyron Williams</Authors>
+    <Description>A light weight fluent gaurd clause library for .Net</Description>
+    <PackageId>PreventR</PackageId>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/NyronW/MinimalEndpoints</RepositoryUrl>
+    <PackageTags>ASP.NET; Minimal API; Endpoint; REPR; C#; .NET</PackageTags>
+    <Version>1.0.5</Version>
+  </PropertyGroup>
+
+</Project>
